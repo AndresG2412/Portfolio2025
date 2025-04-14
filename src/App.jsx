@@ -7,13 +7,14 @@ import Github from './Components/Buttons/Github'
 import Linkedin from './Components/Buttons/Linkedin'
 import Javascript from './Components/Buttons/Javascript'
 import Gmail from './Components/Buttons/Gmail'
+import FormContact from './Components/FormContact'
 
 export default function App() {
     return (
         <>
             <Navbar/>
 
-            <section id='Quien Soy' className='w-full h-[80vh] md:mt-28 flex flex-col items-center justify-center gap-y-10'>
+            <section id='Quien Soy' className='w-full h-[80vh] mt-24 md:mt-28 flex flex-col items-center justify-center md:gap-y-10'>
                 <div className='flex flex-col items-center justify-center h-full gap-y-10'>
                     <div className='w-[250px] h-[250px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center justify-center'>
                     </div>
@@ -25,7 +26,7 @@ export default function App() {
                 <a href=""><Gmail/></a>
             </section>
 
-            <section id='Proyectos' className='pt-16 md:pt-24'>
+            <section id='Proyectos' className='pt-20 md:pt-24'>
                 <p className='text-center text-4xl tracking-wider font-bold pb-12'>PROYECTOS PERSONALES</p>
                 <CardProject 
                     titulo={"Tienda Virtual"} 
@@ -47,7 +48,7 @@ export default function App() {
                     />
             </section>
 
-            <section id='Recorrido' className='pt-16 md:pt-24 pb-12'>
+            <section id='Recorrido' className='pt-20 md:pt-24 pb-12'>
                 <p className='text-center text-4xl tracking-wider font-bold pb-12 uppercase'>Recorrido Personal</p>
                 <img src={roadmap} alt="roadmap_image" className='px-10 md:px-0 md:w-[50%] mx-auto'/>
                 <div className='md:flex justify-center items-center gap-x-10 mt-10'>
@@ -81,6 +82,13 @@ export default function App() {
                     <a href="/hojadevida2025.pdf" download><Javascript/></a>
                 </div>
             </div>
+
+            <section id='Contacto' className='pt-20 md:pt-24 pb-24'>
+                <p className='text-center text-4xl tracking-wider font-bold pb-12'>CONTACTAME</p>
+                <div className='md:w-2/3 px-4 md:px-0 mx-auto'>
+                    <FormContact/>
+                </div>
+            </section>
         </>
     )
 }

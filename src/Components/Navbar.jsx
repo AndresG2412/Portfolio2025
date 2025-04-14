@@ -7,7 +7,7 @@ export default function Navbar() {
             <a href="#" className='shadow-2xl hover:scale-110 hover:duration-300 hover:text-purple-800'>Quien Soy</a>
             <a href="#Proyectos" className='shadow-2xl hover:scale-110 hover:duration-300 hover:text-purple-800'>Proyectos</a>
             <a href="#Recorrido" className='shadow-2xl hover:scale-110 hover:duration-300 hover:text-purple-800'>Recorrido</a>
-            <a href="#" className='shadow-2xl hover:scale-110 hover:duration-300 hover:text-purple-800'>Contacto</a>
+            <a href="#Contacto" className='shadow-2xl hover:scale-110 hover:duration-300 hover:text-purple-800'>Contacto</a>
             <ControlMode/>
         </div>
     )
