@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ControlMode() {
     return (
-        <div>
+        <div className='hidden md:block'>
             <label class="inline-flex items-center relative">
                 <input class="peer hidden" id="toggle" type="checkbox" />
                 <div
