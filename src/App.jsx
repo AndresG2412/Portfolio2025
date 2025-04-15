@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import CardProject from './Components/CardProject'
 
 import roadmap from "./Images/roadmap_camilo.png"
+import roadmap_dark from "./Images/roadmap_camilo_dark.png"
 import Github from './Components/Buttons/Github'
 import Linkedin from './Components/Buttons/Linkedin'
 import Javascript from './Components/Buttons/Javascript'
@@ -14,7 +15,7 @@ export default function App() {
         <>
             <Navbar/>
 
-            <section id='Quien Soy' className='w-full h-[80vh] mt-24 md:mt-28 flex flex-col items-center justify-center md:gap-y-10'>
+            <section id='Quien Soy' className='dark:text-white w-full h-[80vh] mt-24 md:mt-28 flex flex-col items-center justify-center md:gap-y-10'>
                 <div className='flex flex-col items-center justify-center h-full gap-y-10'>
                     <div className='w-[250px] h-[250px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center justify-center'>
                     </div>
@@ -26,7 +27,7 @@ export default function App() {
                 <a href=""><Gmail/></a>
             </section>
 
-            <section id='Proyectos' className='pt-20 md:pt-24'>
+            <section id='Proyectos' className='dark:text-white pt-20 md:pt-24'>
                 <p className='text-center text-4xl tracking-wider font-bold pb-12'>PROYECTOS PERSONALES</p>
                 <CardProject 
                     titulo={"Tienda Virtual"} 
@@ -48,9 +49,10 @@ export default function App() {
                     />
             </section>
 
-            <section id='Recorrido' className='pt-20 md:pt-24 pb-12'>
+            <section id='Recorrido' className='dark:text-white pt-20 md:pt-24 pb-12'>
                 <p className='text-center text-4xl tracking-wider font-bold pb-12 uppercase'>Recorrido Personal</p>
-                <img src={roadmap} alt="roadmap_image" className='px-10 md:px-0 md:w-[50%] mx-auto'/>
+                <img src={roadmap} alt="roadmap_image" className='dark:hidden block px-10 md:px-0 md:w-[50%] mx-auto'/>
+                <img src={roadmap_dark} alt="roadmap_image" className='hidden dark:block px-10 md:px-0 md:w-[50%] mx-auto'/>
                 <div className='md:flex justify-center items-center gap-x-10 mt-10'>
                     <div className='mx-auto mb-8 md:hidden w-[250px] h-[250px] rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center justify-center'>
                     </div>
@@ -83,7 +85,7 @@ export default function App() {
                 </div>
             </div>
 
-            <section id='Contacto' className='pt-20 md:pt-24 pb-24'>
+            <section id='Contacto' className='dark:text-white pt-20 md:pt-24 pb-24'>
                 <p className='text-center text-4xl tracking-wider font-bold pb-12'>CONTACTAME</p>
                 <div className='md:w-2/3 px-4 md:px-0 mx-auto'>
                     <FormContact/>

@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function ControlMode() {
+    // Inicializa con el modo del sistema o guardado en localStorage
+    const [darkMode, setDarkMode] = useState(() => {
+        return localStorage.getItem('darkMode') === 'true' || 
+               (window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('darkMode') !== 'false');
+    });
+
+    useEffect(() => {
+        if (darkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('darkMode', 'true');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('darkMode', 'false');
+        }
+    }, [darkMode]);
+
+    const handleToggle = () => setDarkMode(prev => !prev);
+
     return (
         <div className='hidden md:block'>
-            <label class="inline-flex items-center relative">
-                <input class="peer hidden" id="toggle" type="checkbox" />
+            <label className="inline-flex items-center relative cursor-pointer">
+                <input 
+                    className="sr-only peer"
+                    id="toggle"
+                    type="checkbox"
+                    onChange={handleToggle}
+                    checked={darkMode}/>
                 <div
                     class="relative w-[110px] h-[50px] bg-black peer-checked:bg-white rounded-full after:absolute after:content-[''] after:w-[40px] after:h-[40px] after:bg-gradient-to-r from-orange-500 to-yellow-400 after:from-white after:to-white peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[5px] after:left-[5px] active:after:w-[50px] peer-checked:after:left-[105px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-2xl"
                 ></div>

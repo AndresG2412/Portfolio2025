@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 #navbar{
     background-color: var(--bc-nav-foot);
+}
+
+.backgroungdark {
+    background-color: #080826;
 }
 
 .button-icon {

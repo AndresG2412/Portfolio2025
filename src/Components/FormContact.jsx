@@ -62,7 +62,7 @@ export default function FormContact() {
             placeholder="Nombre"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className='border-2 border-black rounded px-4 py-2'
+            className='border-2 dark:border-white border-black rounded px-4 py-2'
         />
 
         <label className='text-center text-2xl py-3'>Tu Correo: </label>
@@ -71,19 +71,19 @@ export default function FormContact() {
             placeholder="Correo electrónico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className='border-2 border-black rounded px-4 py-2'
+            className='border-2 dark:border-white border-black rounded px-4 py-2'
         />
 
         <label htmlFor="" className='text-center text-2xl py-3'>Escribe tu Mensaje: </label>
         <textarea
             readOnly
             value={message}
-            className='border-2 border-black rounded px-4 py-2 resize-none' // desactiva el resize
+            className='border-2 dark:border-white border-black rounded px-4 py-2 resize-none' // desactiva el resize
         />
 
         <button
             type="submit"
-            className="mt-8 mb-4 mx-auto w-[150px] md:w-55 bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#4c4c4c] before:to-[rgb(111,111,111)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+            className="font-semibold tracking-wider text-xl mt-8 mb-4 mx-auto w-[150px] md:w-55 dark:text-black dark:bg-white bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-300 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#4c4c4c] before:to-[rgb(111,111,111)] before:transition-all before:duration-300 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
         >
             Enviar
         </button>
