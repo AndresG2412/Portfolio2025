@@ -24,7 +24,7 @@ export default function App() {
                         <p className='font-semibold tracking-wide text-lg text-start'>Ingeniero de Sistemas con +3 años<br />programando y emprendiendo como<br />desarrollador web junior independiente,<br />acesor y vendedor online con ambición<br />y mucho que aprender dia a dia</p>
                     </div>
                 </div>
-                <a href=""><Gmail/></a>
+                <a href="#Contacto"><Gmail/></a>
             </section>
 
             <section id='Proyectos' className='dark:text-white pt-20 md:pt-24'>
@@ -74,14 +74,14 @@ export default function App() {
 
             <div className='mb-24'>
                 <div className='hidden md:flex justify-center items-center gap-x-10 mb-8'>
-                    <a href="https://github.com/AndresG2412"><Github/></a>
-                    <a href="https://www.linkedin.com/in/andres-gaviria-503757257/"><Linkedin/></a>
-                    <a href="/hojadevida2025.pdf" download><Javascript/></a>
+                    <a target="_blank" href="https://github.com/AndresG2412"><Github/></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/andres-gaviria-503757257/"><Linkedin/></a>
+                    <a target="_blank" href="/hojadevida2025.pdf" download><Javascript/></a>
                 </div>
                 <div className='md:hidden flex flex-col gap-y-8 justify-center items-center gap-x-10 mb-8'>
-                    <a href="https://github.com/AndresG2412"><Github/></a>
-                    <a href="https://www.linkedin.com/in/andres-gaviria-503757257/"><Linkedin/></a>
-                    <a href="/hojadevida2025.pdf" download><Javascript/></a>
+                    <a target="_blank" href="https://github.com/AndresG2412"><Github/></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/andres-gaviria-503757257/"><Linkedin/></a>
+                    <a target="_blank" href="/hojadevida2025.pdf" download><Javascript/></a>
                 </div>
             </div>
 
