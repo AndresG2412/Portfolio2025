@@ -10,6 +10,12 @@ import Javascript from './Components/Buttons/Javascript'
 import Gmail from './Components/Buttons/Gmail'
 import FormContact from './Components/FormContact'
 
+import perfil from "./Images/perfil.jpg"
+import reconocimiento from "./Images/reconocimiento.jpg"
+import proyecto1 from "./Images/proyecto1.jpg"
+import proyecto2 from "./Images/proyecto2.jpg"
+import proyecto3 from "./Images/proyecto3.jpg"
+
 export default function App() {
     return (
         <>
@@ -17,8 +23,8 @@ export default function App() {
 
             <section id='Quien Soy' className='dark:text-white w-full h-[80vh] mt-24 md:mt-28 flex flex-col items-center justify-center md:gap-y-10'>
                 <div className='flex flex-col items-center justify-center h-full gap-y-10'>
-                    <div className='w-[250px] h-[250px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center justify-center'>
-                    </div>
+                    <img src={perfil} alt="img_perfil" className='w-[250px] h-[250px] rounded-full shadow-2xl flex items-center justify-center'>
+                    </img>
                     <div className='flex flex-col items-center text-start gap-y-5'>
                         <div className='flex items-center gap-x-2 '>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="2.2" stroke="currentColor" class="size-8">
@@ -40,18 +46,21 @@ export default function App() {
                     <p className='text-center text-4xl tracking-wider font-bold'>PROYECTOS PERSONALES</p>
                 </div>
                 <CardProject 
+                    img={proyecto1}
                     titulo={"Tienda Virtual"} 
                     descripcion={"Tienda de productos para ventas profesionales, con panel de administrador para subir todo lo relacionado a la tienda utilizando Next.JS y Firebase sin costo alguno de mantenimiento, mostrando los productos en la pagina principal para los clientes."}
                     linkRepo={"https://github.com/AndresG2412/OnlineShop"}
                     linkPreview={"https://salchi-gabo.vercel.app/"}
                     />
                 <CardProject 
+                    img={proyecto2}
                     titulo={`"Uber" Empresarial`} 
                     descripcion={"Pagina al estilo Uber para solicitud de servicio de transporte publico para la empresa Aerotrans LTDA, proyecto profesional utilizando Next.JS y Firebase, sin costo de mantenimiento, con la finalidad de mejorar procesos internos."}
                     linkRepo={"https://github.com/AndresG2412/Aerotrans"}
                     linkPreview={"https://aerotrans.vercel.app/"}
                     />
                 <CardProject 
+                    img={proyecto3}
                     titulo={"Invitaciones Online"} 
                     descripcion={"Espectacular SPA con Vite.JS y Tailwind, compartiendo invitaciones de manera virtual a celebración provada, siendo un proyecto profesional; verificando los datos en la pagina y confirmando la llegada de manera interna."}
                     linkRepo={"https://github.com/AndresG2412/cartas-mv"}
@@ -69,8 +78,7 @@ export default function App() {
                 <img src={roadmap} alt="roadmap_image" className='dark:hidden block px-10 md:px-0 md:w-[50%] mx-auto'/>
                 <img src={roadmap_dark} alt="roadmap_image" className='hidden dark:block px-10 md:px-0 md:w-[50%] mx-auto'/>
                 <div className='md:flex justify-center items-center gap-x-10 mt-10'>
-                    <div className='mx-auto mb-8 md:hidden w-[250px] h-[250px] rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl flex items-center justify-center'>
-                    </div>
+                    <img src="./Images/reconocimiento.jpg" alt="img_reconocimiento" className='mx-auto mb-8 md:hidden w-[250px] h-[250px] rounded-lg shadow-2xl flex items-center justify-center'/>
                     <p className='px-16 md:px-0 md:w-1/3 font-semibold text-lg'>Todo comenzo conociendo HTML, de ahi en adelante es historia,
                     conociendo CSS luego TailwindCSS, a la vez los diferentes
                     frameworks y tecnologias usadas para el desarrollo web, seguido
@@ -82,8 +90,7 @@ export default function App() {
                     el mismo animo que el primer dia, deseo trabajar y aprender
                     mucho mas de todo este mundo hasta que mi esfuerzo
                     sea reconocido y envidiado de buena forma 🫡</p>
-                    <div className='hidden w-[250px] h-[250px] rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl md:flex items-center justify-center'>
-                    </div>
+                    <img src={reconocimiento} alt="img_reconocimiento" className='hidden w-[250px] h-[250px] rounded-lg shadow-2xl md:flex items-center justify-center'/>
                 </div>
             </section>
 

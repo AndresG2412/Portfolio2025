@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function CardProject({titulo, descripcion, linkRepo, linkPreview}) {
+export default function CardProject({img, titulo, descripcion, linkRepo, linkPreview}) {
     return (
         <div className='w-2/3 mx-auto md:flex gap-x-12 py-8 items-center justify-center'>
-            <div className=' md:w-[50rem] h-52 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl mb-8 md:mb-0'>
-            </div>
+            <img src={img} alt="img_proyecto" className=' md:w-72 h-52 rounded-lg shadow-2xl mb-8 md:mb-0'/>
             <div className='flex flex-col items-start justify-center gap-y-5'>
                 <p className='text-3xl font-bold tracking-wider'>{titulo}</p>
                 <p className='tracking-wide text-lg w-full'>{descripcion}</p>
