@@ -39,10 +39,13 @@ export default function App() {
             </section>
 
             <section id='Proyectos' className='dark:text-white pt-20 md:pt-24'>
-                <div className='flex items-center justify-center gap-x-4 mb-12'>
+                <div className='hidden md:flex items-center justify-center gap-x-4 mb-12'>
                     <svg className='hidden md:block' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="size-10">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
                     </svg>
+                    <p className='text-center text-4xl tracking-wider font-bold'>PROYECTOS PERSONALES</p>
+                </div>
+                <div className='block md:hidden items-center justify-center gap-x-4 mb-12'>
                     <p className='text-center text-4xl tracking-wider font-bold'>PROYECTOS PERSONALES</p>
                 </div>
                 <CardProject 
@@ -69,10 +72,13 @@ export default function App() {
             </section>
 
             <section id='Recorrido' className='dark:text-white pt-20 md:pt-24 pb-12'>
-                <div className='flex items-center justify-center gap-x-4 pb-12'>
+                <div className='hidden md:flex items-center justify-center gap-x-4 mb-12'>
                     <svg className='hidden md:block' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="2.2" stroke="currentColor" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                     </svg>
+                    <p className='text-center text-4xl tracking-wider font-bold uppercase'>Recorrido Personal</p>
+                </div>
+                <div className='block md:hidden items-center justify-center gap-x-4 mb-12'>
                     <p className='text-center text-4xl tracking-wider font-bold uppercase'>Recorrido Personal</p>
                 </div>
                 <img src={roadmap} alt="roadmap_image" className='dark:hidden block px-10 md:px-0 md:w-[50%] mx-auto'/>
