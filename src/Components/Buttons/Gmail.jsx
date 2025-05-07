@@ -3,7 +3,7 @@ import React from 'react'
 export default function Gmail() {
     return (
         <div>
-            <div className="button-icon">
+            <div className="button-icon animate-fade-in delay-300ms hover:animate-jiggle">
                 <div className="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 49.4 512 399.42">
                         <g fill="none" fill-rule="evenodd">

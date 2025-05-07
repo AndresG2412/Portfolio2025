@@ -23,9 +23,9 @@ export default function App() {
 
             <section id='Quien Soy' className='dark:text-white w-full h-[80vh] mt-24 md:mt-28 flex flex-col items-center justify-center md:gap-y-10'>
                 <div className='flex flex-col items-center justify-center h-full gap-y-10'>
-                    <img src={perfil} alt="img_perfil" className='w-[250px] h-[250px] rounded-full shadow-2xl flex items-center justify-center'>
+                    <img src={perfil} alt="img_perfil" className='w-[250px] h-[250px] animate-zoom-in rounded-full shadow-2xl flex items-center justify-center'>
                     </img>
-                    <div className='flex flex-col items-center text-start gap-y-5'>
+                    <div className='flex flex-col items-center text-start gap-y-5 animate-fade-in delay-300ms'>
                         <div className='flex items-center gap-x-2'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="2.2" stroke="currentColor" class="size-8">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
